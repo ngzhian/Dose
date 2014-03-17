@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="addButtonBackground">#40C0CB</color>
+    <color name="addButtonPressedBackground">#00A8C6</color>
+    <color name="addButtonFont">#F9F2EF</color>
+    <color name="addButtonPressedFont">#F9F2EF</color>
+    <color name="deleteButtonBackground">#FE4365</color>
+    <color name="deleteButtonPressedBackground">#C44D58</color>
+
+</resources>

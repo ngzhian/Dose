@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:orientation="horizontal"
+    android:padding="10dp" android:baselineAligned="false">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/rowName"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:text="Name"
+            android:textSize="25sp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/rowQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_below="@id/rowName"
+            android:layout_marginRight="5dp"
+            android:text="1"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/rowUnit"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_below="@id/rowName"
+            android:layout_toRightOf="@id/rowQuantity"
+            android:text="tablet"
+            tools:ignore="HardcodedText" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rowTimeLayout"
+        android:layout_width="60dp"
+        android:layout_height="60dp" >
+
+        <TextView
+            android:id="@+id/rowTime"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="20"
+            android:textSize="30sp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/rowTimeUnit"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_below="@id/rowTime"
+            android:gravity="center"
+            android:text="secs"
+            tools:ignore="HardcodedText" />
+
+    </RelativeLayout>
+
+</LinearLayout>

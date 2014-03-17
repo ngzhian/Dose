@@ -1,0 +1,27 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_marginBottom="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+
+    <Button
+        android:id="@+id/addNew"
+        android:background="@drawable/add_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:fitsSystemWindows="false"
+        android:onClick="add"
+        android:textColor="@color/add_button_text"
+        android:text="@string/addNew"
+        android:textAllCaps="false" />
+
+</merge>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="dosageTypes">
+        <item>tablet</item>
+        <item>capsule</item>
+        <item>teaspoon</item>
+        <item>mg</item>
+    </string-array>
+</resources>

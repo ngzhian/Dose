@@ -1,0 +1,119 @@
+    <merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/editLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context=".EditActivity" >
+
+        <RelativeLayout
+            android:id="@+id/edit_top_relative"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" >
+
+            <TextView
+                android:id="@+id/imtaking"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/add_name_label"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/editQuantity"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/imtaking"
+                android:ems="10"
+                android:hint="@string/dosageHint"
+                android:inputType="number" >
+
+                <requestFocus android:layout_width="wrap_content" />
+
+            </EditText>
+
+            <Spinner
+                android:id="@+id/editUnit"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignBottom="@+id/editQuantity"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/editQuantity" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp" >
+
+            <TextView
+                android:id="@+id/of"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/of"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/editName"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/of"
+                android:ems="10"
+                android:hint="@string/medicationHint"
+                android:inputType="textCapSentences" />
+        </RelativeLayout>
+
+        <TimePicker
+            android:id="@+id/editTimePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <Button
+            android:id="@+id/Button01"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/delete_button"
+            android:onClick="deleteDose"
+            android:text="@string/delete"
+            android:textColor="@color/add_button_text" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/add_button"
+            android:onClick="editDose"
+            android:text="@string/edit"
+            android:textColor="@color/add_button_text" />
+
+    </LinearLayout>
+
+</merge>
